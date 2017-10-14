@@ -37,7 +37,7 @@
     background-color: #b4bace;
 }
 
-.wt .wt:hover>h1{
+.wt .wt:hover>h1,.wt>h1:hover{
     background-image: url("arrowRight.png");
     background-position: right center;
     background-repeat: no-repeat;
