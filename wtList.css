@@ -1,0 +1,87 @@
+@keyframes sideDown {
+    from {height: 0%;opacity: 0%}
+    to {height: 100%;opacity: 100%}
+}
+
+.listwt .wt,.listwt>span{
+    width: 110px;
+}
+
+.listwt,.listwt .wt,listwt h1,.listwt span,.listwt a {
+    min-width: 110px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------*/
+.listwt h1,.listwt span,.listwt a {
+    background-color: #cce6ec;
+    font-size: 1em;
+    font-weight: normal;
+    color: #694444;
+    margin: 0;
+    border: 0.1px solid #ffffff;
+    cursor: default;
+    user-select: none;
+}
+
+.wt:hover>h1,.listwt span:hover,.listwt a:hover {
+    background-color: #ccd3ec;
+    color: #96BBBB;
+}
+
+.listwt h1:active,.listwt span:active,.listwt a:active {
+    background-color: #b4bace;
+}
+
+
+/*First Layer Override*/
+
+
+.listwt>span,.listwt>span a,.listwt>.wt>h1 {
+    background-color: #88d0da;
+    color: #694444;
+}
+
+.listwt>span:hover,.listwt>span a:hover,.listwt>.wt>h1:hover {
+    background-color: #ccd3ec;
+    color: #96BBBB;
+}
+
+.listwt>span:active,.listwt>span a:active,.listwt>.wt>h1:active {
+    background-color: #b4bace;
+}
+.wt>h1:hover{
+    background-image: url("arrowRight.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+}
+/*-----------------------------------------------*/
+
+.wt span {
+    display: none;
+    position: relative;
+}
+
+.wt:hover>span {
+    animation-name: sideDown;
+    animation-duration: 0.1s;
+    display: block;
+    top: -100%;
+    left: 100%;
+}
+
+/*horizontal*/
+
+.listwt[data-horizontal]>.wt,.listwt[data-horizontal]>span,.listwt[data-horizontal]>span a {
+    float: left;
+}
+
+.listwt[data-horizontal]>.wt:hover>span {
+    top: 0;
+    left: 0;
+}
