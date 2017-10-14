@@ -37,7 +37,12 @@
     background-color: #b4bace;
 }
 
-
+.wt .wt:hover>h1{
+    background-image: url("arrowRight.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+}
 /*First Layer Override*/
 
 
@@ -54,12 +59,7 @@
 .listwt>span:active,.listwt>span a:active,.listwt>.wt>h1:active {
     background-color: #b4bace;
 }
-.wt .wt:hover>h1{
-    background-image: url("arrowRight.png");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: 1em 1em;
-}
+
 /*-----------------------------------------------*/
 
 .wt span {
